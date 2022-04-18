@@ -18,7 +18,7 @@ public class posts
 
     private String title;
 
-    @Column(length = =500, nullable = false)
+    @Column(length =500, nullable = false)
     private String content;
 
 
