@@ -1,16 +1,15 @@
-package com.webservice.study.domain;
+package com.webservice.study.domain.posts;
 
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
-import javax.annotation.processing.Generated;
 import javax.persistence.*;
 
 @Getter
 @NoArgsConstructor
 @Entity
-public class posts
+public class Posts
 {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -25,7 +24,7 @@ public class posts
     private String author;
 
     @Builder
-    public posts(String title, String Content , String author){
+    public Posts(String title, String content , String author){
         this.title = title;
         this.content = content;
         this.author = author;
